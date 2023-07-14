@@ -1,5 +1,5 @@
 from ting_file_management.abstract_queue import AbstractQueue
-
+# inicia o projeto
 
 class Queue(AbstractQueue):
     def __init__(self):
