@@ -27,6 +27,7 @@ def remove(instance):
         removed = instance.dequeue()["nome_do_arquivo"]
         sys.stdout.write(str(f"Arquivo {removed} removido com sucesso\n"))
 
+
 def file_metadata(instance, position):
     if not 0 <= position < len(instance):
         print('Posição inválida', file=sys.stderr)
