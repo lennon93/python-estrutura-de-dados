@@ -9,7 +9,7 @@ def exists_word(word, instance):
         for num_linha, linha in enumerate(linhas_item, start=1):
             if word.lower() in linha.lower():
                 searched_words.append({"linha": num_linha})
-                
+
         if searched_words:
             result.append({
                 "palavra": word,
@@ -17,6 +17,7 @@ def exists_word(word, instance):
                 "ocorrencias": searched_words
             })
     return result
+
 
 def search_by_word(word, instance):
     """Aqui irá sua implementação"""
